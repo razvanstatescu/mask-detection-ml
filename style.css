@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.train-images {
+    display: none;
+}
+
+#test-img {
+    max-height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid gray;
+}
+
+#test-img.mask {
+    border: 10px solid green;
+}
+
+#test-img.no-mask {
+    border: 10px solid red;
+}
