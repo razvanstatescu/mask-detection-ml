@@ -6,6 +6,7 @@ window.onload = async () => {
     // Add mask images to the DOM and give them a class of `mask-img`
     for (let i = 1; i <= maskImageCount; i++) {
         const newImage = document.createElement('IMG');
+        newImage.setAttribute('crossorigin', `anonymous`);
         newImage.setAttribute('src', `images/mask/${i}.jpg`);
         newImage.classList.add('mask-img');
         trainImagesContainer.appendChild(newImage);
@@ -13,6 +14,7 @@ window.onload = async () => {
     // Add no mask images to the DOM and give them a class of `no-mask-img`
     for (let i = 1; i <= noMaskImageCount; i++) {
         const newImage = document.createElement('IMG');
+        newImage.setAttribute('crossorigin', `anonymous`);
         newImage.setAttribute('src', `images/no_mask/${i}.jpg`);
         newImage.classList.add('no-mask-img');
         trainImagesContainer.appendChild(newImage);
